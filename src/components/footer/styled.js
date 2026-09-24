@@ -236,6 +236,10 @@ export const Styled = {
             box-shadow: 0 0 10px rgba(118, 255, 157, 0.45);
         }
 
+        .iconOnlyGrid { grid-template-columns: repeat(3, minmax(48px, 1fr)); }
+        .iconOnlyGrid a { min-height: 48px; padding: 0; display: grid; place-items: center; grid-template-columns: 1fr; }
+        .iconOnlyGrid a > svg { width: 18px; height: 18px; }
+
         @media (max-width: 1050px) {
             .footerTop {
                 grid-template-columns: 1fr 1fr;

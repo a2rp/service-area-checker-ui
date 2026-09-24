@@ -179,3 +179,5 @@ textarea {
         animation-iteration-count: 1 !important;
     }
 }
+
+.appMain { padding-top: 88px; }

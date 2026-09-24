@@ -104,7 +104,7 @@ const Header = ({ hasSearched, activeSection, onNavigate }) => {
                         className="githubLink"
                         href="https://github.com/a2rp/service-area-checker-ui"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                     >
                         <FiGithub />
 
