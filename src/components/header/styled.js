@@ -52,15 +52,11 @@ export const Styled = {
             border-radius: 50%;
             background: rgba(118, 255, 157, 0.07);
             color: #76ff9d;
-            transition:
-                transform 0.2s ease,
-                background 0.2s ease,
-                box-shadow 0.2s ease;
+            transition: background 0.2s ease, box-shadow 0.2s ease;
         }
 
         .brand:hover .brandIcon,
         .brand.active .brandIcon {
-            transform: translateY(-2px);
             background: rgba(118, 255, 157, 0.12);
             box-shadow: 0 0 20px rgba(118, 255, 157, 0.12);
         }
@@ -182,16 +178,11 @@ export const Styled = {
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.08em;
-            transition:
-                background 0.2s ease,
-                border-color 0.2s ease,
-                transform 0.2s ease;
-        }
+            transition: background 0.2s ease, border-color 0.2s ease;        }
 
         .githubLink:hover {
             border-color: rgba(118, 255, 157, 0.38);
             background: rgba(118, 255, 157, 0.07);
-            transform: translateY(-1px);
         }
 
         .githubLink svg:last-child {
@@ -247,17 +238,13 @@ export const Styled = {
             color: #f6f8f6;
             cursor: pointer;
             text-align: left;
-            transition:
-                color 0.2s ease,
-                padding-left 0.2s ease;
-        }
+            transition: color 0.2s ease;        }
 
         .mobileMenu button.active {
             color: #76ff9d;
         }
 
         .mobileMenu button:hover {
-            padding-left: 5px;
         }
 
         .menuNumber {
