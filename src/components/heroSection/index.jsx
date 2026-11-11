@@ -23,18 +23,18 @@ const HeroSection = ({ onGoChecker, onGoCoverage }) => {
                 <div className="heroContent">
                     <div className="eyebrow">
                         <span className="statusDot" />
-                        <span>Service Network Online</span>
+                        <span>Service Area Demo</span>
                     </div>
 
                     <h1>
-                        Know what's available
-                        <span>before you book.</span>
+                        Preview service coverage
+                        <span>with sample PIN results.</span>
                     </h1>
 
                     <p className="heroDescription">
-                        Check your ZIP code to instantly see service
-                        availability, regional coverage, dispatch status, and
-                        supported home services in your area.
+                        Try sample Bengaluru PIN codes to explore how a service
+                        area checker can present regional coverage and
+                        service-by-service results.
                     </p>
 
                     <div className="heroActions">
@@ -43,7 +43,7 @@ const HeroSection = ({ onGoChecker, onGoCoverage }) => {
                             type="button"
                             onClick={onGoChecker}
                         >
-                            Check my ZIP code
+                            Try a sample PIN code
                             <FiArrowDown />
                         </button>
 
@@ -65,12 +65,12 @@ const HeroSection = ({ onGoChecker, onGoCoverage }) => {
 
                         <span>
                             <FiShield />
-                            No signup required
+                            No sign-up needed
                         </span>
 
                         <span>
                             <FiClock />
-                            24/7 status visibility
+                            Illustrative sample data
                         </span>
                     </div>
                 </div>
@@ -78,13 +78,13 @@ const HeroSection = ({ onGoChecker, onGoCoverage }) => {
                 <div className="heroPanel">
                     <div className="panelHeader">
                         <div>
-                            <span>NETWORK OVERVIEW</span>
+                            <span>SAMPLE NETWORK</span>
                             <strong>Coverage Status</strong>
                         </div>
 
                         <span className="liveStatus">
                             <i />
-                            Live
+                            Demo
                         </span>
                     </div>
 
@@ -115,28 +115,28 @@ const HeroSection = ({ onGoChecker, onGoCoverage }) => {
                         <article>
                             <span>01</span>
                             <strong>8</strong>
-                            <p>Core services</p>
+                            <p>Sample services</p>
                         </article>
 
                         <article>
                             <span>02</span>
                             <strong>3</strong>
-                            <p>Regional hubs</p>
+                            <p>Sample regions</p>
                         </article>
 
                         <article>
                             <span>03</span>
-                            <strong>24/7</strong>
-                            <p>Emergency support</p>
+                            <strong>6-digit</strong>
+                            <p>Indian PIN format</p>
                         </article>
 
                         <article>
                             <span>04</span>
                             <strong>
                                 <FiZap />
-                                Fast
+                                Local
                             </strong>
-                            <p>Dispatch response</p>
+                            <p>Demo matching</p>
                         </article>
                     </div>
                 </div>
@@ -148,7 +148,7 @@ const HeroSection = ({ onGoChecker, onGoCoverage }) => {
                 <button
                     type="button"
                     onClick={onGoChecker}
-                    aria-label="Go to ZIP checker"
+                    aria-label="Go to PIN code checker"
                 >
                     <FiArrowDown />
                 </button>

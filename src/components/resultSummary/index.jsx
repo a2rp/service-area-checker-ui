@@ -9,9 +9,9 @@ import {
 import { Styled } from "./styled";
 
 const coverageLabelMap = {
-    full: "Full Coverage",
-    partial: "Partial Coverage",
-    unavailable: "Out of Service Area",
+    full: "Full Sample Match",
+    partial: "Partial Sample Match",
+    unavailable: "No Sample Match",
 };
 
 const coverageClassMap = {
@@ -53,7 +53,7 @@ const ResultSummary = ({ submittedZip, matchedRegion, hasSearched }) => {
                         <strong className="statusValue">{coverageLabel}</strong>
 
                         <span className="statusZip">
-                            ZIP {submittedZip || "-"}
+                            PIN {submittedZip || "-"}
                         </span>
                     </div>
 
@@ -61,13 +61,13 @@ const ResultSummary = ({ submittedZip, matchedRegion, hasSearched }) => {
                         <div className="resultHeader">
                             <div>
                                 <span className="eyebrow">
-                                    SERVICE NETWORK RESPONSE
+                                    SAMPLE COVERAGE RESULT
                                 </span>
 
                                 <h2>
                                     {isOutOfArea
-                                        ? "This area is not active yet."
-                                        : "Your area is covered."}
+                                        ? "No sample region found."
+                                        : "Sample region matched."}
                                 </h2>
                             </div>
 
@@ -81,8 +81,8 @@ const ResultSummary = ({ submittedZip, matchedRegion, hasSearched }) => {
 
                         <p className="resultDescription">
                             {isOutOfArea
-                                ? "We could not match this ZIP code with an active regional service hub. You can try another nearby ZIP code or check back later as coverage expands."
-                                : "We matched your ZIP code with an active service region. Review the assigned hub, estimated response window, and service availability below."}
+                                ? "This PIN code is not included in the sample dataset. Try one of the suggested Bengaluru examples to explore the demo."
+                                : "This PIN code matches a sample region. The hub, response window, and service statuses below are illustrative demo values."}
                         </p>
 
                         <div className="resultGrid">
@@ -92,7 +92,7 @@ const ResultSummary = ({ submittedZip, matchedRegion, hasSearched }) => {
                                 </span>
 
                                 <div>
-                                    <span className="infoLabel">ZIP Code</span>
+                                    <span className="infoLabel">PIN Code</span>
 
                                     <strong>{submittedZip || "-"}</strong>
                                 </div>
@@ -148,7 +148,7 @@ const ResultSummary = ({ submittedZip, matchedRegion, hasSearched }) => {
                         <div className="resultFooter">
                             <span>
                                 <i />
-                                Live coverage lookup completed
+                                Sample lookup completed
                             </span>
 
                             <span>Result generated for {submittedZip}</span>

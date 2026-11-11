@@ -8,14 +8,14 @@ const trustItems = [
         value: "Regional",
         label: "Coverage Mapping",
         description:
-            "ZIP-based lookup helps identify active service regions and nearby operational hubs.",
+            "PIN-code lookup matches the illustrative Bengaluru regions bundled with this demo.",
     },
     {
         icon: FiClock,
-        value: "24/7",
-        label: "Status Visibility",
+        value: "6-digit",
+        label: "Indian PIN Format",
         description:
-            "Coverage information remains available whenever you need to check service reach.",
+            "The sample lookup accepts six-digit Indian PIN codes.",
     },
     {
         icon: FiShield,
@@ -27,9 +27,9 @@ const trustItems = [
     {
         icon: FiActivity,
         value: "Instant",
-        label: "Service Response",
+        label: "Sample Result",
         description:
-            "Coverage results are generated immediately from the configured regional service data.",
+            "Results are generated locally from sample data; no provider is contacted.",
     },
 ];
 
@@ -86,7 +86,7 @@ const TrustStrip = () => {
 
                         <div>
                             <span>SYSTEM STATUS</span>
-                            <strong>Service checker operational</strong>
+                            <strong>Demo interface ready</strong>
                         </div>
                     </div>
 

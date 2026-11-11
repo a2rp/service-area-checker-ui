@@ -9,7 +9,7 @@ import {
 
 import { Styled } from "./styled";
 
-const sampleZips = ["110001", "400001", "560001", "700001"];
+const sampleZips = ["560001", "560063", "110001"];
 
 const ZipCheckerForm = ({ zipCode, setZipCode, handleCheckZip, error }) => {
     const handleSubmit = (event) => {
@@ -39,20 +39,20 @@ const ZipCheckerForm = ({ zipCode, setZipCode, handleCheckZip, error }) => {
                     </h2>
 
                     <p>
-                        Enter your 6-digit ZIP code to see whether our service
-                        network is available in your area and which services can
-                        be scheduled.
+                        Enter a 6-digit Indian PIN code to explore the sample
+                        Bengaluru coverage dataset. These results are for this
+                        interface demo only.
                     </p>
 
                     <div className="introPoints">
                         <span>
                             <FiCheckCircle />
-                            Instant coverage status
+                            Instant sample result
                         </span>
 
                         <span>
                             <FiCheckCircle />
-                            Service-by-service availability
+                            Service-by-service demo
                         </span>
 
                         <span>
@@ -67,7 +67,7 @@ const ZipCheckerForm = ({ zipCode, setZipCode, handleCheckZip, error }) => {
                         <div>
                             <span className="cardEyebrow">LOCATION SEARCH</span>
 
-                            <h3>Enter your ZIP code</h3>
+                            <h3>Enter an Indian PIN code</h3>
                         </div>
 
                         <span className="secureBadge">
@@ -77,7 +77,7 @@ const ZipCheckerForm = ({ zipCode, setZipCode, handleCheckZip, error }) => {
                     </div>
 
                     <form onSubmit={handleSubmit}>
-                        <label htmlFor="serviceZip">ZIP CODE</label>
+                        <label htmlFor="serviceZip">INDIAN PIN CODE</label>
 
                         <div
                             className={`inputShell ${error ? "hasError" : ""}`}
@@ -91,7 +91,7 @@ const ZipCheckerForm = ({ zipCode, setZipCode, handleCheckZip, error }) => {
                                 type="text"
                                 inputMode="numeric"
                                 autoComplete="postal-code"
-                                placeholder="Enter 6-digit ZIP code"
+                                placeholder="Enter 6-digit PIN code"
                                 value={zipCode}
                                 maxLength={6}
                                 onChange={(event) => {
@@ -123,7 +123,7 @@ const ZipCheckerForm = ({ zipCode, setZipCode, handleCheckZip, error }) => {
 
                     <div className="sampleSection">
                         <div className="sampleHeading">
-                            <span>TRY A SAMPLE ZIP</span>
+                            <span>TRY A SAMPLE PIN</span>
                             <span className="divider" />
                         </div>
 
@@ -145,10 +145,10 @@ const ZipCheckerForm = ({ zipCode, setZipCode, handleCheckZip, error }) => {
                     <div className="cardFooter">
                         <span className="statusIndicator">
                             <i />
-                            Search service operational
+                            Demo data only · not a live lookup
                         </span>
 
-                        <span>6-digit ZIP required</span>
+                        <span>6-digit PIN required</span>
                     </div>
                 </div>
             </div>

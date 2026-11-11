@@ -6,16 +6,16 @@ const steps = [
     {
         number: "01",
         icon: FiSearch,
-        title: "Enter ZIP Code",
+        title: "Enter Indian PIN Code",
         description:
-            "Start with your 6-digit ZIP code so the checker can identify the correct regional coverage zone.",
+            "Enter a 6-digit Indian PIN code to look for a matching region in the sample dataset.",
     },
     {
         number: "02",
         icon: FiServer,
         title: "Match Service Region",
         description:
-            "The system compares your location with active service hubs, regional rules, and operational coverage data.",
+            "The demo compares the PIN code with illustrative region and service data bundled with the site.",
     },
     {
         number: "03",
@@ -27,9 +27,9 @@ const steps = [
     {
         number: "04",
         icon: FiCheckCircle,
-        title: "Know Before Booking",
+        title: "Review the Sample Result",
         description:
-            "Use the result to understand whether services are available, limited, or currently outside the service area.",
+            "See which services are marked available, limited, or unavailable in the illustrative dataset.",
     },
 ];
 
@@ -44,7 +44,7 @@ const HowItWorks = () => {
                         <span className="eyebrow">04 / HOW IT WORKS</span>
 
                         <h2>
-                            From ZIP code
+                            From PIN code
                             <span>to coverage.</span>
                         </h2>
                     </div>
@@ -52,12 +52,12 @@ const HowItWorks = () => {
                     <div className="headerInfo">
                         <span className="liveBadge">
                             <i />
-                            Coverage engine online
+                            Sample rules loaded
                         </span>
 
                         <p>
-                            A simple four-step lookup turns a ZIP code into a
-                            clear service availability result.
+                            A simple four-step lookup turns a PIN code into a
+                            sample coverage result. No live provider is queried.
                         </p>
                     </div>
                 </div>
@@ -113,7 +113,7 @@ const HowItWorks = () => {
                     <div className="processMeta">
                         <span>
                             <strong>01</strong>
-                            ZIP input
+                            PIN input
                         </span>
 
                         <span>

@@ -80,7 +80,7 @@ const App = () => {
         const cleanZip = normalizedZip.trim();
 
         if (!cleanZip) {
-            setError("Please enter a ZIP code.");
+            setError("Please enter an Indian PIN code.");
             setHasSearched(false);
             setMatchedRegion(null);
             setSubmittedZip("");
@@ -88,7 +88,7 @@ const App = () => {
         }
 
         if (!/^\d{6}$/.test(cleanZip)) {
-            setError("Please enter a valid 6-digit ZIP code.");
+            setError("Please enter a valid 6-digit Indian PIN code.");
             setHasSearched(false);
             setMatchedRegion(null);
             setSubmittedZip("");

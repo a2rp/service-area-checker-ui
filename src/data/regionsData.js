@@ -26,7 +26,7 @@ export const regionsData = [
             },
             leakDetection: {
                 status: "limited",
-                note: "Available in selected ZIP clusters",
+                note: "Available in selected PIN-code clusters",
             },
             electricalRepairs: {
                 status: "limited",
@@ -34,7 +34,7 @@ export const regionsData = [
             },
             sewerLineService: {
                 status: "unavailable",
-                note: "Not supported in this ZIP code",
+                note: "Not included in this sample PIN-code region",
             },
             emergencyVisit: {
                 status: "available",

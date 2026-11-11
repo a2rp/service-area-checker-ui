@@ -1,13 +1,15 @@
 # Service Area Checker UI
 
-A responsive React interface for checking ZIP-code service availability, regional coverage, and supported services.
+A responsive React demo for checking Indian PIN-code service coverage. It uses a small, hard-coded sample dataset for Bengaluru; it is not connected to a real service provider or live availability system.
 
 ## Features
 
-- ZIP code validation with full, limited, and unavailable states
-- Regional hub, response, coverage, and service details
+- Six-digit Indian PIN-code lookup with full, partial, and no-match states
+- Sample regional hub, response, coverage, and service details
 - Active section navigation with responsive mobile menu
 - Fixed header, icon-only footer links, and go-to-top control
+
+All displayed regions, hubs, response times, and service statuses are illustrative demo data. Do not use them to plan or book a real service.
 
 ## Tech stack
 
@@ -22,7 +24,7 @@ npm run dev
 
 Build with `npm run build` and deploy with `npm run deploy`.
 
-## Live
+## Demo
 
 [Open Service Area Checker UI](https://a2rp.github.io/service-area-checker-ui/)
 

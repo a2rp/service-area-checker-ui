@@ -17,9 +17,8 @@ const BottomCta = ({ handleReset }) => {
                     </h2>
 
                     <p>
-                        Run another ZIP lookup to compare coverage areas,
-                        regional hubs, service status, and local operational
-                        availability.
+                        Try another sample PIN code to compare the example
+                        regions, hubs, and service statuses in this demo.
                     </p>
 
                     <div className="ctaActions">
@@ -29,7 +28,7 @@ const BottomCta = ({ handleReset }) => {
                             onClick={handleReset}
                         >
                             <FiRefreshCw />
-                            Check another ZIP
+                            Try another PIN code
                         </button>
 
                         <a
@@ -53,14 +52,14 @@ const BottomCta = ({ handleReset }) => {
                         <span>LOCATION LOOKUP</span>
 
                         <strong>
-                            One ZIP code.
+                            One PIN code.
                             <br />
                             Clear coverage.
                         </strong>
 
                         <p>
-                            No account required. Just enter a valid ZIP code and
-                            review the available service network.
+                            Enter a sample Indian PIN code to review the
+                            illustrative service-area results.
                         </p>
                     </div>
 
@@ -70,7 +69,7 @@ const BottomCta = ({ handleReset }) => {
                             Checker ready
                         </span>
 
-                        <span>6-digit ZIP</span>
+                        <span>6-digit PIN</span>
                     </div>
                 </div>
             </div>

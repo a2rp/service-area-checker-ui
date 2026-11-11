@@ -95,9 +95,9 @@ const CoverageDetails = ({ matchedRegion, hasSearched }) => {
                     </div>
 
                     <p>
-                        Your ZIP code falls within an active service region.
-                        These operational details determine routing, response
-                        availability, and service capacity.
+                        This PIN code matches a sample region. The routing,
+                        response, and capacity details are illustrative data
+                        for this interface demo.
                     </p>
                 </div>
 
@@ -105,16 +105,14 @@ const CoverageDetails = ({ matchedRegion, hasSearched }) => {
                     <div className="networkCard">
                         <div className="networkTop">
                             <div>
-                                <span className="panelLabel">
-                                    ACTIVE REGION
-                                </span>
+                                <span className="panelLabel">SAMPLE REGION</span>
 
                                 <h3>{matchedRegion.name}</h3>
                             </div>
 
                             <span className="networkStatus">
                                 <i />
-                                Connected
+                                Demo data
                             </span>
                         </div>
 
@@ -197,7 +195,7 @@ const CoverageDetails = ({ matchedRegion, hasSearched }) => {
                     <div className="logicHeader">
                         <span>AVAILABILITY LOGIC</span>
 
-                        <h3>Why service availability can vary by ZIP code.</h3>
+                        <h3>Why service availability can vary by PIN code.</h3>
                     </div>
 
                     <div className="logicGrid">

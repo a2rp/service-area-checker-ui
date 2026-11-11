@@ -92,7 +92,7 @@ const Header = ({ hasSearched, activeSection, onNavigate }) => {
                                 <span>{item.label}</span>
 
                                 {item.requiresSearch && !hasSearched && (
-                                    <small>CHECK ZIP FIRST</small>
+                                    <small>CHECK A SAMPLE PIN</small>
                                 )}
                             </button>
                         );
@@ -149,7 +149,7 @@ const Header = ({ hasSearched, activeSection, onNavigate }) => {
                                     <strong>{item.label}</strong>
 
                                     {item.requiresSearch && !hasSearched && (
-                                        <small>Check ZIP first</small>
+                                        <small>Check a sample PIN</small>
                                     )}
                                 </span>
 

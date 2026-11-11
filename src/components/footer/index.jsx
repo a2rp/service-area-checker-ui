@@ -41,7 +41,7 @@ const Footer = () => (
                         <span className="brandIcon"><FiGlobe /></span>
                         <span className="brandText"><strong>Service Area</strong><span>Checker UI</span></span>
                     </div>
-                    <p>A modern service-area availability interface for checking ZIP-based regional coverage and supported services.</p>
+                    <p>A service-area UI demo with illustrative Bengaluru PIN-code coverage and service data.</p>
                     <a className="emailLink" href="mailto:ash.ranjan09@gmail.com"><FiMail /> ash.ranjan09@gmail.com</a>
                 </div>
                 <div className="linkColumn">
@@ -61,7 +61,7 @@ const Footer = () => (
                     <span>Copyright © {new Date().getFullYear()} <a href="https://www.ashishranjan.net/" target="_blank" rel="noopener noreferrer">Ashish Ranjan</a></span>
                     <span>All rights reserved.</span>
                 </div>
-                <div className="buildMeta"><span><i />Interface operational</span><span>React + Vite</span></div>
+                <div className="buildMeta"><span><i />Demo interface</span><span>React + Vite</span></div>
             </div>
         </div>
     </Styled.Wrapper>

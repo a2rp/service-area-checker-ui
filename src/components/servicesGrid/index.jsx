@@ -70,16 +70,16 @@ const ServicesGrid = ({ matchedRegion, hasSearched }) => {
 
                                     <p>
                                         {service.description ||
-                                            "Service availability is determined by current regional coverage and local operational capacity."}
+                                            "Sample availability is determined by the illustrative region data bundled with this demo."}
                                     </p>
 
                                     <div className="cardFooter">
                                         <span>
                                             {service.status === "available"
-                                                ? "Ready to schedule"
+                                                ? "Available in sample data"
                                                 : service.status === "limited"
-                                                  ? "Limited scheduling"
-                                                  : "Not currently available"}
+                                                  ? "Limited in sample data"
+                                                  : "Unavailable in sample data"}
                                         </span>
 
                                         <FiZap />
@@ -95,15 +95,15 @@ const ServicesGrid = ({ matchedRegion, hasSearched }) => {
                         </div>
 
                         <div>
-                            <span>NO ACTIVE SERVICES</span>
+                            <span>NO SAMPLE SERVICES</span>
 
                             <h3>
-                                Service coverage is not available for this ZIP.
+                                No sample coverage is listed for this PIN code.
                             </h3>
 
                             <p>
-                                Try another nearby ZIP code or check again later
-                                as the service network expands.
+                                Try one of the sample Bengaluru PIN codes to
+                                explore the example service states.
                             </p>
                         </div>
                     </div>
